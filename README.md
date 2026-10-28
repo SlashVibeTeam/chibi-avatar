@@ -16,18 +16,6 @@ English · [简体中文](README.zh-CN.md)
 
 </div>
 
-## Examples
-
-<div align="center">
-
-<img src="showcase/examples/public-figures.png" alt="Chibi avatars of public figures" width="100%">
-
-Sam Altman · Dario Amodei · Elon Musk · Liang Wenfeng
-
-<sub>Unofficial fan illustrations. Not affiliated with or endorsed by the people shown.</sub>
-
-</div>
-
 ## What is this
 
 Chibi Avatar is a skill for AI agents. Upload a photo of a person and it draws a big-head, small-body chibi working at a desk, keeping the hairstyle, skin tone, glasses and outfit from the photo.
@@ -128,7 +116,7 @@ Illustration style and skill design: **[Sherry](https://github.com/SherryLi8)** 
 
 ## Disclaimer
 
-- Avatars of public figures made with this skill, including any in this repo, are unofficial fan illustrations. They are not affiliated with or endorsed by the people shown.
+- Avatars of public figures made with this skill are unofficial fan illustrations. They are not affiliated with or endorsed by the people shown.
 - Only use photos you have the right to use. Ask before making an avatar of someone else.
 
 ## License

@@ -16,18 +16,6 @@
 
 </div>
 
-## 示例
-
-<div align="center">
-
-<img src="showcase/examples/public-figures.png" alt="公众人物 Q 版小人示例" width="100%">
-
-Sam Altman · Dario Amodei · Elon Musk · 梁文锋
-
-<sub>非官方同人示例，与图中人物无关，也未经其背书。</sub>
-
-</div>
-
 ## 这是什么
 
 Chibi Avatar 是一个给 AI 助手用的 skill。你上传一张人物照片，它就画出一个大头小身体、坐在桌前工作的 Q 版小人，并保留照片里的发型、肤色、眼镜和穿搭。
@@ -128,7 +116,7 @@ skills/chibi-avatar/
 
 ## 免责声明
 
-- 用本 skill 生成的公众人物形象（包括本仓库中的示例）均为非官方同人作品，与本人无关，也未经其背书。
+- 用本 skill 生成的公众人物形象均为非官方同人作品，与本人无关，也未经其背书。
 - 请只使用你有权使用的照片。给别人做小人前，请先征得对方同意。
 
 ## 许可

@@ -16,21 +16,17 @@
 
 </div>
 
-<!--
-名人示例做好后，把图片放进 showcase/examples/，再取消下面这段注释，并按实际文件名修改。
-
 ## 示例
 
 <div align="center">
 
-| <img src="showcase/examples/altman.png" width="220"> | <img src="showcase/examples/dalio.png" width="220"> | <img src="showcase/examples/musk.png" width="220"> |
-|:---:|:---:|:---:|
-| Sam Altman | Ray Dalio | Elon Musk |
+<img src="showcase/examples/public-figures.png" alt="公众人物 Q 版小人示例" width="100%">
+
+Sam Altman · Dario Amodei · Elon Musk · 梁文锋
 
 <sub>非官方同人示例，与图中人物无关，也未经其背书。</sub>
 
 </div>
--->
 
 ## 这是什么
 

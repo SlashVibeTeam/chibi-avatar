@@ -16,21 +16,17 @@ English · [简体中文](README.zh-CN.md)
 
 </div>
 
-<!--
-When the public-figure examples are ready, put the images in showcase/examples/, uncomment this block and match the file names.
-
 ## Examples
 
 <div align="center">
 
-| <img src="showcase/examples/altman.png" width="220"> | <img src="showcase/examples/dalio.png" width="220"> | <img src="showcase/examples/musk.png" width="220"> |
-|:---:|:---:|:---:|
-| Sam Altman | Ray Dalio | Elon Musk |
+<img src="showcase/examples/public-figures.png" alt="Chibi avatars of public figures" width="100%">
+
+Sam Altman · Dario Amodei · Elon Musk · Liang Wenfeng
 
 <sub>Unofficial fan illustrations. Not affiliated with or endorsed by the people shown.</sub>
 
 </div>
--->
 
 ## What is this
 

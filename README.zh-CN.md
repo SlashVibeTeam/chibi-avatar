@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="showcase/logo-dark.png">
-  <img src="showcase/logo-light.png" alt="Chibi Avatar" width="560">
+  <img src="showcase/logo-light.png" alt="Chibi Avatar" width="340">
 </picture>
 
 [English](README.md) · 简体中文

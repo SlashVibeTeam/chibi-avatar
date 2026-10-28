@@ -1,24 +1,25 @@
 <div align="center">
 
-# Chibi Avatar
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="showcase/logo-dark.png">
+  <img src="showcase/logo-light.png" alt="Chibi Avatar" width="560">
+</picture>
 
-**一张照片，生成你的 Q 版工位小人**
-
-[English](README.en.md) · 简体中文
+English · [简体中文](README.zh-CN.md)
 
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
-[![Images: CC BY-NC 4.0](https://img.shields.io/badge/images-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)
+[![Images: CC BY-NC 4.0](https://img.shields.io/badge/images-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Agent Skill](https://img.shields.io/badge/Agent-Skill-8A2BE2.svg)](skills/chibi-avatar/SKILL.md)
-[![Works with Codex](https://img.shields.io/badge/works%20with-Codex-black.svg)](#运行环境)
+[![Works with Codex](https://img.shields.io/badge/works%20with-Codex-black.svg)](#requirements)
 
-<img src="showcase/team-row.png" alt="Q 版工位小人示例" width="100%">
+<img src="showcase/team-row.png" alt="Chibi desk avatars" width="100%">
 
 </div>
 
 <!--
-名人示例做好后，把图片放进 showcase/examples/，再取消下面这段注释，并按实际文件名修改。
+When the public-figure examples are ready, put the images in showcase/examples/, uncomment this block and match the file names.
 
-## 示例
+## Examples
 
 <div align="center">
 
@@ -26,108 +27,115 @@
 |:---:|:---:|:---:|
 | Sam Altman | Ray Dalio | Elon Musk |
 
+<sub>Unofficial fan illustrations. Not affiliated with or endorsed by the people shown.</sub>
+
 </div>
 -->
 
-## 这是什么
+## What is this
 
-Chibi Avatar 是一个给 AI 助手用的 skill。你上传一张人物照片，它就画出一个大头小身体、坐在桌前工作的 Q 版小人，并保留照片里的发型、肤色、眼镜和穿搭。
+Chibi Avatar is a skill for AI agents. Upload a photo of a person and it draws a big-head, small-body chibi working at a desk, keeping the hairstyle, skin tone, glasses and outfit from the photo.
 
-可以画你自己、你的同事，也可以画你喜欢的公众人物。
+Make one of yourself, your teammates, or a public figure you like.
 
-## 三步上手
+## Quick start
 
-**1. 下载**
+**1. Download**
 
 ```bash
 git clone https://github.com/SlashVibeTeam/chibi-avatar.git
 ```
 
-**2. 安装到 Codex**
+**2. Install into Codex**
 
 ```bash
 mkdir -p ~/.codex/skills && cp -R chibi-avatar/skills/chibi-avatar ~/.codex/skills/
 ```
 
-**3. 开一个新对话，上传照片，输入**
+**3. Start a new conversation, upload a photo, and type**
 
 ```
-用 $chibi-avatar，按我的照片做一个 Q 版小人。
+Use $chibi-avatar to make a chibi avatar from my photo.
 ```
 
-## 功能
+## Features
 
 | | |
 |---|---|
-| **一人一图** | 每次生成一张独立的方形小人图，约 1024 × 1024 |
-| **保留特征** | 发型、发色、肤色、眼镜、配饰和穿搭都以照片为准 |
-| **三种场景** | 居家木桌（默认）· 办公室工位 · 坐垫矮桌 |
-| **可选加料** | 1–3 件桌面小物 · 宠物（另传一张宠物照片） · 透明背景 |
-| **出图自检** | 按清单核对脸、手、桌面透视和比例，有问题只改局部 |
+| **One person per image** | A standalone square avatar, about 1024 × 1024 |
+| **Keeps your look** | Hairstyle, hair color, skin tone, glasses, accessories and outfit follow the photo |
+| **Three scenes** | Wooden desk at home (default) · office workstation · cushion at a low table |
+| **Optional extras** | 1–3 desk items · a pet (from a second photo) · transparent background |
+| **Self-check** | Checks the face, hands, desk perspective and proportions, and fixes only what's wrong |
 
-每张图的桌上都会有一台小小的 [SlashVibe](https://github.com/SlashVibeTeam) 产品，这是这套画风的固定元素。
+Every avatar has a small [SlashVibe](https://github.com/SlashVibeTeam) device on the desk. It's a fixed part of this style.
 
-## 更多用法
+## More ways to use it
 
-| 想要 | 这样说 |
+| You want | Say |
 |---|---|
-| 指定特征 | `用 $chibi-avatar。保留黑框眼镜，居家办公，桌上放一只小咖啡杯。` |
-| 带上宠物 | `用 $chibi-avatar，第一张是我，第二张是我的猫，让猫坐在桌边。` |
-| 透明背景 | `用 $chibi-avatar，做办公桌前的全身小人，透明背景。` |
-| 修改已有图 | `只把猫的眼睛改成黄绿色，其他保持不变。` |
+| Specific features | `Use $chibi-avatar. Keep my black glasses, home desk, a small coffee cup on the desk.` |
+| Add a pet | `Use $chibi-avatar. The first photo is me, the second is my cat. Put the cat beside the desk.` |
+| Transparent background | `Use $chibi-avatar. Full-body avatar at an office desk, transparent background.` |
+| Edit an existing image | `Only change the cat's eyes to yellow-green. Keep everything else.` |
 
-更多写法见 [使用示例](skills/chibi-avatar/references/examples.md)。
+See [examples](skills/chibi-avatar/references/examples.md) (in Chinese) for more.
 
-## 运行环境
+## Requirements
 
-出图靠 AI 工具**自带的图像生成功能**，不需要额外的 API key。
+Images come from your AI tool's **built-in image generation**. No extra API key is needed.
 
-| 工具 | 能否直接出图 |
+| Tool | Generates the image directly? |
 |---|---|
-| **Codex** | ✅ 可以，推荐 |
-| 其他带内置生图功能、支持 skill 的 AI 工具 | ✅ 可以 |
-| **Claude Code** | ⚠️ 不能。目前没有内置生图功能，只会给出整理好的 prompt 和参考图清单，需要再拿到其他生图工具里使用 |
+| **Codex** | ✅ Yes, recommended |
+| Other AI tools with built-in image generation and skill support | ✅ Yes |
+| **Claude Code** | ⚠️ No. It has no built-in image generation yet, so it gives you the prompt and the list of reference images to use in another image tool |
 
 <details>
-<summary>在 Claude Code 中安装</summary>
+<summary>Install in Claude Code</summary>
 
 ```bash
 mkdir -p ~/.claude/skills && cp -R chibi-avatar/skills/chibi-avatar ~/.claude/skills/
 ```
 
-调用时把 `$chibi-avatar` 换成 `/chibi-avatar`。
+Use `/chibi-avatar` instead of `$chibi-avatar`.
 
 </details>
 
 <details>
-<summary>只生成 prompt，不调用 AI 助手</summary>
+<summary>Build the prompt without an AI agent</summary>
 
-仓库自带一个 prompt 整理脚本，只用 Python 标准库，不联网、不上传：
+The repo includes a prompt builder that uses only the Python standard library, with no network and no uploads:
 
 ```bash
 python3 skills/chibi-avatar/scripts/build_prompt.py --photo ~/me.jpg --scene home
 ```
 
-输出的 prompt 和参考图路径可以直接用在支持参考图的生图工具里。`--scene` 可选 `home`、`office`、`floor`。
+Use the resulting prompt and reference image paths in any image tool that accepts reference images. `--scene` can be `home`, `office` or `floor`.
 
 </details>
 
-## 目录结构
+## Structure
 
 ```
 skills/chibi-avatar/
-├── SKILL.md            # skill 主说明
-├── assets/             # 定稿参考图、产品外形和比例参考
-├── references/         # 画风检查标准、使用示例
-├── scripts/            # prompt 整理脚本
-└── agents/             # Codex 界面配置
+├── SKILL.md            # main skill instructions
+├── assets/             # style reference, product shape and scale references
+├── references/         # style checklist, usage examples
+├── scripts/            # prompt builder
+└── agents/             # Codex UI config
 ```
 
-## 作者
+## Credits
 
-画风与 skill 设计：**[Sherry](https://github.com/SherryLi8)** @ [SlashVibe](https://github.com/SlashVibeTeam)
+Illustration style and skill design: **[Sherry](https://github.com/SherryLi8)** @ [SlashVibe](https://github.com/SlashVibeTeam)
 
-## 许可
+## Disclaimer
 
-- 代码与文字说明（`SKILL.md`、`references/`、`scripts/`、`agents/` 等）：[MIT](LICENSE)
-- 图片（`assets/`、`showcase/`）：[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)，可以使用和改编，需署名，不可商用
+- Avatars of public figures made with this skill, including any in this repo, are unofficial fan illustrations. They are not affiliated with or endorsed by the people shown.
+- Only use photos you have the right to use. Ask before making an avatar of someone else.
+
+## License
+
+- Code and text (`SKILL.md`, `references/`, `scripts/`, `agents/`, etc.): [MIT](LICENSE)
+- Images (`assets/`, `showcase/`): [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). You may use and adapt them with attribution, but not commercially.

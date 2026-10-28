@@ -1,0 +1,7 @@
+interface:
+  display_name: "Chibi Avatar"
+  short_description: "上传照片，生成定稿同款 Q 版工作人物，保留发型、肤色和眼镜，可选宠物与配件"
+  icon_large: "./assets/preview.png"
+  default_prompt: "用 $chibi-avatar，根据我上传的照片做一个同款团队小人。"
+policy:
+  allow_implicit_invocation: true
